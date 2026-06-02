@@ -482,7 +482,7 @@ footer {
     <div class="pipeline-header reveal">
       <p class="section-label">The platform</p>
       <h2 class="section-h2">From sensor to <em>decision</em><br>in under a second</h2>
-      <p class="section-sub">A complete data pipeline — ingestion, storage, alerting, and visual automation — running on your infrastructure.</p>
+      <p class="section-sub">A complete, multi-tenant IoT platform — secure ingestion, time-series storage, alerting, two-way device control, and visual automation — running on your infrastructure.</p>
     </div>
 
     <div class="pipeline-flow reveal">
@@ -515,34 +515,64 @@ footer {
 
     <div class="features-grid reveal">
       <div class="feature-cell">
-        <div class="feature-icon">⚡</div>
+        <div class="feature-icon">🏢</div>
+        <div class="feature-title">Multi-tenant by design</div>
+        <div class="feature-body">Isolation at every layer — the tenant ID is embedded in each MQTT topic, enforced on every database row, and carried in every API call. Per-tenant broker ACLs mean one client's devices can never see another's. Self-service tenant onboarding included.</div>
+      </div>
+      <div class="feature-cell">
+        <div class="feature-icon">📡</div>
         <div class="feature-title">Real-time monitoring</div>
-        <div class="feature-body">Live dashboards, device health, online/offline status. SignalR pushes data to every connected browser the moment it lands.</div>
+        <div class="feature-body">Live dashboards, device health, and online/offline status. Telemetry is pushed to every connected browser the moment it lands — no refresh, no waiting.</div>
+      </div>
+      <div class="feature-cell">
+        <div class="feature-icon">🎛️</div>
+        <div class="feature-title">Two-way device control</div>
+        <div class="feature-body">Telemetry flows up; commands flow down. Reboot, reconfigure, or actuate any device from the platform — with correlated delivery acknowledgements and automatic timeout handling.</div>
       </div>
       <div class="feature-cell">
         <div class="feature-icon">🔔</div>
         <div class="feature-title">Smart alerting</div>
-        <div class="feature-body">Define rules per device or group. Trigger email and WhatsApp notifications before problems become outages.</div>
+        <div class="feature-body">Threshold rules per device or across your whole fleet. Email and SMS / WhatsApp notifications fire within seconds — with built-in throttling and backoff, so you're warned, not spammed.</div>
       </div>
       <div class="feature-cell">
         <div class="feature-icon">🔀</div>
         <div class="feature-title">Visual automation</div>
-        <div class="feature-body">Node-RED integrated as a flow runtime. Build device logic, transformations, and integrations without custom code.</div>
+        <div class="feature-body">Node-RED embedded as a flow runtime. Build device logic, data transformations, and integrations without writing code — versioned and deployed straight from the platform.</div>
       </div>
       <div class="feature-cell">
-        <div class="feature-icon">🏢</div>
-        <div class="feature-title">Multi-tenancy</div>
-        <div class="feature-body">Complete tenant isolation at the MQTT layer. Per-tenant dynamic ACLs — your clients' data never touches each other.</div>
+        <div class="feature-icon">🔑</div>
+        <div class="feature-title">Secure device onboarding</div>
+        <div class="feature-body">Every device gets unique credentials, bcrypt-hashed and registered in the broker's dynamic security layer. Provision in a click, revoke instantly — no shared passwords, ever.</div>
+      </div>
+      <div class="feature-cell">
+        <div class="feature-icon">📈</div>
+        <div class="feature-title">Time-series at scale</div>
+        <div class="feature-body">Partitioned PostgreSQL with automatic retention and pre-computed rollups. Millions of readings ingested at thousands per second, with sub-10-millisecond dashboard queries.</div>
+      </div>
+      <div class="feature-cell">
+        <div class="feature-icon">🛡️</div>
+        <div class="feature-title">Built to survive</div>
+        <div class="feature-body">Engineered for the real world — survives broker restarts, network drops, and load-shedding. Persistent sessions, dead-letter queues, and daily backups mean no telemetry is ever silently lost.</div>
+      </div>
+      <div class="feature-cell">
+        <div class="feature-icon">🚦</div>
+        <div class="feature-title">Versioned flows &amp; canary rollouts</div>
+        <div class="feature-body">Every automation is versioned. Roll changes out ring by ring — canary, early adopter, production — and roll back in one click if something looks wrong.</div>
       </div>
       <div class="feature-cell">
         <div class="feature-icon">🔐</div>
         <div class="feature-title">Enterprise security</div>
-        <div class="feature-body">OpenIddict OAuth2, role-based access control, TLS on all device connections, POPIA-aligned data handling.</div>
+        <div class="feature-body">OAuth2 / OIDC via OpenIddict, fine-grained role-based access control, and TLS on every device connection — with full audit logging aligned to POPIA traceability.</div>
       </div>
       <div class="feature-cell">
         <div class="feature-icon">📊</div>
         <div class="feature-title">Full observability</div>
-        <div class="feature-body">Structured logging via Seq, metrics counters, health checks, and distributed tracing. Know what's happening before your clients do.</div>
+        <div class="feature-body">Structured logging via Seq, live metrics counters, and health checks across every service. Know what's happening on your platform before your clients do.</div>
+      </div>
+      <div class="feature-cell">
+        <div class="feature-icon">🧩</div>
+        <div class="feature-title">Open &amp; extensible</div>
+        <div class="feature-body">REST APIs, API keys, outbound webhooks, and edge-gateway support to extend Connex into your existing systems, ERPs, and remote sites.</div>
       </div>
     </div>
 
@@ -647,8 +677,8 @@ footer {
         <div class="sa-feature">
           <div class="sa-feature-icon">💬</div>
           <div>
-            <div class="sa-feature-title">WhatsApp-first alerting</div>
-            <div class="sa-feature-body">Alerts via Africa's Talking reach your team where they already work. No app to install, no new tool to learn.</div>
+            <div class="sa-feature-title">WhatsApp &amp; SMS alerting</div>
+            <div class="sa-feature-body">Alerts reach your team on the channels they already use — SMS today, WhatsApp rolling out — through local South African providers. No app to install, no new tool to learn.</div>
           </div>
         </div>
         <div class="sa-feature">
